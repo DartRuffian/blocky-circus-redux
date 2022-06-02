@@ -29,6 +29,20 @@
             "base:shulk",
             "upgraded:adapted_shulk",
             "soulwisp:soulwisp",
-            "soulwisp:adapted_soulwisp"
+            "soulwisp:adapted_soulwisp",
+            "moborigins:bee",
+            "moborigins:drowned",
+            "moborigins:guardian",
+            "moborigins:elder_guardian",
+            "moborigins:evoker",
+            "moborigins:fox",
+            "moborigins:slime",
+            "moborigins:snowgolem",
+            "moborigins:strider",
+            "moborigins:witch",
+            "extraorigins:floran",
+            "extraorigins:inchling",
+            "extraorigins:piglin",
+            "extraorigins:truffle"
         ]
 }
