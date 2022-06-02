@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "order": 0,
+    "allow_random": true,
+    "exclude_random": 
+        [
+            "origins:human"
+        ],
+    "allow_random_unchoosable": false,
+    "origins": 
+        [
+            "base:human",
+            "base:avian",
+            "upgraded:adapted_avian",
+            "base:arachnid",
+            "upgraded:adapted_arachnid",
+            "base:blazeborn",
+            "upgraded:adapted_blazeborn",
+            "base:elytrian",
+            "upgraded:adapted_elytrian",
+            "base:enderian",
+            "upgraded:adapted_enderian",
+            "base:feline",
+            "upgraded:adapted_feline",
+            "base:merling",
+            "upgraded:adapted_merling",
+            "base:phantom",
+            "upgraded:adapted_phantom",
+            "base:shulk",
+            "upgraded:adapted_shulk"
+        ]
+}

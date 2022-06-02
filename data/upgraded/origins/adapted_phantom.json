@@ -1,0 +1,25 @@
+{
+	"name": "Adapted Phantom",
+	"description": "You've slain the terror of the skies! You feel stronger as the darkness enshrouds you...",
+	"icon": 
+		{
+			"item": "minecraft:phantom_membrane",
+			"amount": 1,
+			"tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+    	},
+    "order": 11,
+    "impact": 1,
+	"unchoosable": true,
+    "powers": 
+		[
+			"base:phantomize",
+			"origins:translucent",
+			"base:phasing",
+			"base:invisibility",
+			"origins:burn_in_daylight",
+			"origins:fragile",
+			"base:phantomize_overlay",
+			"upgraded:stacking_effect_positive",
+			"upgraded:phantom_flight"
+    	]
+}

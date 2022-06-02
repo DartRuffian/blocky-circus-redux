@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:toggle",
+    "key": 
+        {
+            "continuous": false,
+            "key": "secondary"
+        }
+}

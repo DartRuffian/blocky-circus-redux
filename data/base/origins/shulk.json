@@ -1,0 +1,27 @@
+{
+	"name": "Shulk",
+	"description": "Related to Shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.",
+	"icon": 
+		{
+			"item": "minecraft:shulker_shell"
+		},
+	"order": 4,
+	"impact": 1,
+	"powers": [
+		"origins:shulker_inventory",
+		"origins:natural_armor",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"origins:no_shield",
+		"origins:more_exhaustion",
+		"base:reset_drag_kill"
+	],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "upgraded:adapted_shulk",
+				"announcement": "You have evolved... Best check your origin again..."
+			}
+		]
+}

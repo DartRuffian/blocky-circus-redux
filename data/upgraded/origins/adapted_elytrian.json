@@ -1,0 +1,23 @@
+{
+    "name": "Adapted Elytrian",
+	"description": "You and only you shall own the skies now. Killing the dragon has granted you mastery of your wings, evolving you into an Adapted Elytrian.",
+    "icon": 
+        {
+            "item": "minecraft:elytra",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+    "order": 11,
+    "impact": 1,
+	"unchoosable": true,
+    "powers":
+        [
+            "origins:elytra",
+            "origins:light_armor",
+            "origins:launch_into_air",
+            "origins:aerial_combatant",
+            "origins:claustrophobia",
+            "upgraded:less_kinetic_damage",
+            "upgraded:boost"
+        ]
+}
