@@ -1,0 +1,14 @@
+{
+	"name": "Trident Proficient",
+	"description": "You've been training with the trident for years, honing your abilities and increasing your skill.",
+	"icon": 
+		{
+			"item": "minecraft:trident"
+		},
+	"order": 12,
+	"impact": 2,
+	"powers": 
+		[
+			"trident:trident"
+		]
+}
