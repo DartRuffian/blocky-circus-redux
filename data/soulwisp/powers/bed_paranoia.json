@@ -1,0 +1,7 @@
+{
+	"name": "Bed Paranoïa",
+	"description": "After living in the nether for so long, you'd think any bed could explode when sleeping... So you simply refuse to! Spawn still registers.",
+	"type": "origins:prevent_sleep",
+	"message": "Absolutely not, this bed's going to explode. Nope.",
+	"set_spawn_point": true
+}

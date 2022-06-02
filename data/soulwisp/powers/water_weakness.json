@@ -1,0 +1,45 @@
+{
+    "name": "Brighter Flame",
+    "description": "Your flame burns bright enough to no longer be extinguished by fire, but you ",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action":
+        {
+            "type": "origins:apply_effect",
+            "effects":
+                [
+                    {
+                        "effect": "minecraft:slowness",
+                        "is_ambiant": true,
+                        "show_particles": false,
+                        "show_icon": false,
+                        "duration": 400,
+                        "amplifier": 1
+                    },
+                    {
+                        "effect": "minecraft:weakness",
+                        "is_ambiant": true,
+                        "show_particles": false,
+                        "show_icon": false,
+                        "duration": 400,
+                        "amplifier": 0
+                    }
+                ]
+        },
+    "condition":
+        {
+            "type": "origins:or",
+            "conditions":
+                [
+                    {
+                        "type": "origins:fluid_height",
+                        "fluid": "minecraft:water",
+                        "comparison": ">",
+                        "compare_to": 0
+                    },
+                    {
+                        "type": "origins:in_rain"
+                    }
+                ]
+        }
+}

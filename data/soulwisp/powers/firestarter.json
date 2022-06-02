@@ -1,0 +1,34 @@
+{
+	"name": "Firestarter",
+	"description": "By using your own flames, you can craft a stick into a Soul Torch! You get a torch on respawn.",
+	"type": "origins:multiple",
+	"first": 
+		{
+			"type": "origins:starting_equipment",
+			"stack": 
+				{
+					"item": "minecraft:soul_torch",
+					"amount": 1
+				},
+			"recurrent": true
+		},
+	"kindle":
+		{
+			"type": "origins:recipe",
+			"recipe": 
+				{
+					"type": "minecraft:crafting_shapeless",
+					"id": "soulwisp:torchsmithing",
+					"ingredients": 
+						[
+							{
+								"item": "minecraft:stick"
+							}
+						],
+						"result": {
+							"item": "minecraft:soul_torch",
+							"count": 1
+						}
+				}
+		}
+}

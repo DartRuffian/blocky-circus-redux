@@ -27,6 +27,8 @@
             "base:phantom",
             "upgraded:adapted_phantom",
             "base:shulk",
-            "upgraded:adapted_shulk"
+            "upgraded:adapted_shulk",
+            "soulwisp:soulwisp",
+            "soulwisp:adapted_soulwisp"
         ]
 }

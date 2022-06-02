@@ -1,0 +1,32 @@
+{
+	"name": "Soul Wisp",
+	"description": "These fiery remnants of ages past are the lingering will of those fell within the Nether. They share a tight lifeline with Soulfire, their corporeal form born and reborn by these mystic flames.",
+	"icon": "minecraft:soul_lantern",
+	"order": 1,
+	"impact": 3,
+	"powers":
+		[
+			"soulwisp:wisp_form",
+			"soulwisp:soulbound",
+			"soulwisp:tether",
+			"soulwisp:dependance",
+			"soulwisp:soul_stride",
+			"soulwisp:hypothermia",
+			"origins:water_vulnerability",
+			"soulwisp:inner_fire",
+			"soulwisp:firestarter",
+			"soulwisp:bed_paranoia",
+			"origins:damage_from_snowballs",
+			"soulwisp:wisp_flames",
+			"soulwisp:rebirth",
+			"base:reset_drag_kill"
+		],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "soulwisp:adapted_soulwisp",
+				"announcement": "You have evolved... Best check your origin again..."
+			}
+		]
+}
