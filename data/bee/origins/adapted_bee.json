@@ -12,7 +12,7 @@
     "unchoosable": true,
 	"powers":
         [
-            "beeorigin:flight",
+            "bee:flight",
             "origins:slow_falling",
             "bee:poisonous",
             "bee:poison",
