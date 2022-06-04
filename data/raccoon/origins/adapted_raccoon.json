@@ -1,0 +1,27 @@
+{
+	"name": "Adapted Raccoon",
+    "description": "After stabbing that giant flying lizard in the back you feel your natural skills infused with it's magic.",
+	"icon":
+        {
+            "item": "minecraft:brown_dye",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"order": 6,
+	"impact": 1,
+	"unchoosable": true,
+	"powers": 
+		[
+			"raccoon:sneaky",
+			"raccoon:true_invis",
+			"raccoon:poison_diet_plus",
+			"raccoon:fast_digging",
+			"raccoon:climbing",
+			"raccoon:speedy",
+			"origins:cat_vision",
+			"raccoon:steal",
+			"raccoon:small_size",
+			"raccoon:burrower",
+			"origins:fragile"
+		]
+}

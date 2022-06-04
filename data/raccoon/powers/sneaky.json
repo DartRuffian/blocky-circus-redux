@@ -1,0 +1,6 @@
+{
+    "hidden": true,
+    "type": "origins:toggle",
+    "key": "key.origins.primary_active",
+    "active_by_default": false
+}

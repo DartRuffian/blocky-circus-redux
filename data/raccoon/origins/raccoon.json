@@ -1,0 +1,29 @@
+{
+	"name": "Raccoon",
+	"description": "You are a sneaky creature, but if you get caught you're probably doomed.",
+	"icon": "minecraft:brown_dye",
+	"order": 6,
+	"impact": 1,
+	"powers": 
+		[
+			"raccoon:sneaky",
+			"raccoon:partial_invis",
+			"raccoon:poison_diet",
+			"raccoon:fast_digging",
+			"raccoon:climbing",
+			"raccoon:speedy",
+			"origins:cat_vision",
+			"raccoon:small_size",
+			"raccoon:fast_metabolism",
+			"raccoon:burrower",
+			"origins:fragile"
+		],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "raccoon:adapted_raccoon",
+				"announcement": "You have evolved... Best check your origin again..."
+			}
+		]
+}
