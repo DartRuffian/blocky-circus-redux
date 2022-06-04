@@ -1,0 +1,23 @@
+{
+	"name": "Adapted Enigma (WIP)",
+    "description": "Mystery... puzzles... trickery... You make people live in fear of themselves and question their own sanity.",
+	"icon":
+        {
+            "item": "minecraft:jigsaw",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"order": 1,
+	"impact": 2,
+	"unchoosable": true,
+	"powers":
+        [
+            "lunarjs:behind_you",
+            "lunarjs:clone",
+            "lunarjs:phaser",
+            "lunarjs:staring",
+            "lunarjs:hated",
+            "lunarjs:sight",
+            "lunarjs:nodmg"
+        ]
+}
