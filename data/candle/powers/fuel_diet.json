@@ -1,0 +1,30 @@
+{
+    "name": "Fuel the Fire",
+    "description": "As a being of pure wax, organic foods do nothing for you. To sustain your flame, you can consume flammable materials.",
+    "type": "origins:multiple",
+    "candle_diet":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "candle:fuel_food"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 2,
+                    "saturation": 1
+                },
+            "use_action": "eat"
+        },
+    "prevent_normal_food":
+    {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    }
+}

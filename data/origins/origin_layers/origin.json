@@ -36,6 +36,8 @@
             "lunarjs:adapted_enigma",
             "bee:bee",
             "bee:adapted_bee",
+            "candle:candle",
+            "candle:adapted_candle",
             "moborigins:drowned",
             "moborigins:guardian",
             "moborigins:elder_guardian",

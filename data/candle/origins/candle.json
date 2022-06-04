@@ -1,0 +1,30 @@
+{
+	"name": "Candle",
+	"description": "A little candle with a bright future.",
+	"icon": "minecraft:candle",
+	"order": 0,
+	"impact": 2,
+	"powers":
+        [
+            "candle:living_torch",
+            "candle:fiery_fists",
+            "candle:climbing",
+            "candle:sweet_tooth",
+            "candle:small_size",
+            "candle:fire_particles",
+            "candle:fuel_diet",
+            "candle:little_heart",
+            "candle:fast_metabolism",
+            "candle:frost_bites",
+            "origins:water_vulnerability",
+            "base:reset_drag_kill"
+        ],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "candle:adapted_candle",
+				"announcement": "You have evolved... Best check your origin again..."
+			}
+		]
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Adapted Candle (WIP)",
+    "description": "A little candle with a bright future.",
+	"icon":
+        {
+            "item": "minecraft:candle",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"order": 0,
+	"impact": 2,
+	"unchoosable": true,
+	"powers":
+        [
+            "candle:living_torch",
+            "candle:fiery_fists",
+            "candle:climbing",
+            "candle:sweet_tooth",
+            "candle:small_size",
+            "candle:fire_particles",
+            "candle:fuel_diet",
+            "candle:little_heart",
+            "candle:fast_metabolism",
+            "candle:frost_bites",
+            "origins:water_vulnerability"
+        ]
+}

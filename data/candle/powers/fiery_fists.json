@@ -1,0 +1,16 @@
+{
+    "name": "Fiery Fists",
+    "description": "You have a small chance of lighting mobs/players you hit on fire.",
+    "type": "origins:target_action_on_hit",
+    "entity_action":
+        {
+            "type": "origins:chance",
+            "chance": 0.15,
+            "action":
+                {
+                    "type": "origins:set_on_fire",
+                    "duration": 5
+                }
+        },
+    "cooldown": 40
+}
