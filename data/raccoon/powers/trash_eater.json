@@ -1,5 +1,5 @@
 {
-    "name": "Poisonous Diet",
+    "name": "Trash Eater",
     "description": "You are immune to negative effects from poisonous food, and can get more nutrients from it.",
     "type": "origins:modify_food",
     "item_condition":
