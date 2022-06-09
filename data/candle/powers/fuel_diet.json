@@ -7,11 +7,17 @@
             "type": "apugli:edible_item",
             "item_condition": 
                 {
-                    "type": "apoli:ingredient",
-                    "ingredient": 
-                        {
-                            "tag": "candle:fuel_food"
-                        }
+                    "type": "origins:or",
+                    "conditions":
+                        [
+                            {
+                                "type": "apoli:ingredient",
+                                "ingredient": 
+                                    {
+                                        "tag": "candle:fuel_food"
+                                    }
+                            }
+                        ]
                 },
             "food_component": 
                 {
@@ -21,10 +27,25 @@
             "use_action": "eat"
         },
     "prevent_normal_food":
-    {
-        "type": "origins:prevent_item_use",
-        "item_condition": {
-            "type": "origins:food"
+        {
+            "type": "origins:prevent_item_use",
+            "item_condition": 
+                {
+                    "type": "origins:and",
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:food"
+                            },
+                            {
+                                "type": "apoli:ingredient",
+                                "ingredient":
+                                    {
+                                        "tag": "candle:honey"
+                                    },
+                                "inverted": true
+                            }
+                        ]
+                }
         }
-    }
 }
