@@ -1,0 +1,12 @@
+{
+    "name": "Antivenom",
+    "description": "You are immune to negative effects like Poison, Nausea, Hunger, etc.",
+    "type": "origins:effect_immunity",
+    "effects":
+        [
+            "minecraft:poison",
+            "minecraft:hunger",
+            "minecraft:nausea",
+            "minecraft:instant_damage"
+        ]
+}

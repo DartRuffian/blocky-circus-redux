@@ -1,0 +1,29 @@
+{
+	"name": "Opossum",
+	"description": "",
+	"icon": "yigd:grave",
+	"order": 7,
+	"impact": 1,
+	"powers":
+        [ 
+            "opossum:antivenom",
+            "raccoon:trash_eater",
+            "opossum:sharp_claws",
+            "opossum:increased_jump",
+            "opossum:fast_swimming",
+            "raccoon:climbing",
+            "origins:cat_vision",
+            "opossum:small_size",
+            "opossum:frost_bites",
+            "origins:fragile",
+            "base:reset_drag_kill"
+        ],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "opossum:adapted_opossum",
+				"announcement": "You have evolved... Best check your origin again..."
+			}
+		]
+}

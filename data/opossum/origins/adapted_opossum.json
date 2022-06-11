@@ -1,0 +1,27 @@
+{
+	"name": "Adapted Opossum",
+    "description": "",
+	"icon":
+        {
+            "item": "yigd:grave",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"order": 6,
+	"impact": 1,
+	"unchoosable": true,
+	"powers":
+        [
+            "opossum:playing_dead",
+            "opossum:antivenom",
+            "raccoon:trash_eater_plus",
+            "opossum:sharp_claws_plus",
+            "opossum:increased_jump",
+            "opossum:fast_swimming",
+            "raccoon:climbing",
+            "origins:cat_vision",
+            "opossum:small_size",
+            "opossum:frost_bites",
+            "origins:fragile"
+        ]
+}

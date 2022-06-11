@@ -1,0 +1,108 @@
+{
+	"name": "Frost Bites",
+	"description": "Your small body can't handle the cold, and will take damage when in cold biomes and not next to a heat source.",
+    "type": "origins:multiple",
+    "damage": 
+        {
+            "type": "origins:damage_over_time",
+            "interval": 20,
+            "onset_delay": 1,
+            "damage": 1,
+            "damage_easy": 1,
+            "source": 
+                {
+                    "name": "generic",
+                    "unblockable": true,
+                    "bypasses_armor": false
+                },
+            "condition": 
+                {
+                    "type": "origins:biome",
+                    "condition": 
+                        {
+                            "type": "origins:temperature",
+                            "comparison": "<=",
+                            "compare_to": 0.05
+                        },
+                    "entity_condition": 
+                        {
+                            "type": "origins:in_tag",
+                            "inverted": true,
+                            "equipment_slot": "mainhand",
+                            "item_condition": 
+                                {
+                                    "type": "origins:in_tag",
+                                    "conditions": 
+                                        [
+                                            {
+                                                "type": "minecraft:torch"
+                                            },
+                                            {
+                                                "type": "minecraft:lava_bucket"
+                                            },
+                                            {
+                                                "type": "origins:block_in_radius",
+                                                "inverted": true,
+                                                "block_condition": 
+                                                    {
+                                                        "type": "origins:in_tag",
+                                                        "tag": "origins:lava"
+                                                    },
+                                                "radius": 4,
+                                                "shape": "cube",
+                                                "comparison": ">=",
+                                                "compare_to": 1
+                                            }
+                                        ]
+                                }
+                        }
+                }
+        },
+    "shaking":
+        {
+            "type": "origins:shaking",
+            "condition": 
+                {
+                    "type": "origins:biome",
+                    "condition": 
+                        {
+                            "type": "origins:temperature",
+                            "comparison": "<=",
+                            "compare_to": 0.05
+                        },
+                    "entity_condition": 
+                        {
+                            "type": "origins:in_tag",
+                            "inverted": true,
+                            "equipment_slot": "mainhand",
+                            "item_condition": 
+                                {
+                                    "type": "origins:in_tag",
+                                    "conditions": 
+                                        [
+                                            {
+                                                "type": "minecraft:torch"
+                                            },
+                                            {
+                                                "type": "minecraft:lava_bucket"
+                                            },
+                                            {
+                                                "type": "origins:block_in_radius",
+                                                "inverted": true,
+                                                "block_condition": 
+                                                    {
+                                                        "type": "origins:in_tag",
+                                                        "tag": "origins:lava"
+                                                    },
+                                                "radius": 4,
+                                                "shape": "cube",
+                                                "comparison": ">=",
+                                                "compare_to": 1
+                                            }
+                                        ]
+                                }
+                        }
+                }
+        }
+}
+	  
