@@ -1,0 +1,145 @@
+{
+    "name": "Haha the funny weed",
+    "description": "Wavy Mushroom\nOh wait switched the name and description...",
+    "type": "origins:multiple",
+    "resource":
+        {
+            "type": "origins:resource",
+            "min": 0,
+            "max": 3,
+            "max_action":
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+            "hud_render": 
+                {
+                    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+                    "bar_index": 22
+                }
+        },
+    "increase":
+        {
+            "type": "origins:active_self",
+            "key":
+                {
+                    "key": "key.origins.secondary_active"
+                },
+            "entity_action":
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "add",
+                    "change": 1
+                }
+        },
+        "effects":
+            {
+                "type": "origins:active_self",
+                "key": 
+                    {
+                        "key": "key.origins.secondary_active"
+                    },
+                "entity_action":
+                    {
+                        "type": "origins:if_else_list",
+                        "actions":
+                            [
+                                {
+                                    "condition":
+                                        {
+                                            "type": "origins:resource",
+                                            "resource": "*:*_resource",
+                                            "comparison": "==",
+                                            "compare_to": 0
+                                        },
+                                    "action":
+                                        {
+                                            "type": "origins:and",
+                                            "actions":
+                                                [
+                                                    {
+                                                        "type": "origins:clear_effect",
+                                                        "effects":
+                                                            [
+                                                                "minecraft:strength",
+                                                                "minecraft:nausea"
+                                                            ]
+                                                    },
+                                                    {
+                                                        "type": "origins:apply_effect",
+                                                        "effects":
+                                                            [
+                                                                {
+                                                                    "effect": "minecraft:strength",
+                                                                    "duration": 200,
+                                                                    "amplifier": 0
+                                                                },
+                                                                {
+                                                                    "effect": "minecraft:nausea",
+                                                                    "duration": 400,
+                                                                    "amplifier": 0
+                                                                }
+                                                            ]
+                                                    }
+                                                ]
+                                        }
+                                },
+                                {
+                                    "condition":
+                                        {
+                                            "type": "origins:resource",
+                                            "resource": "*:*_resource",
+                                            "comparison": "==",
+                                            "compare_to": 1
+                                        },
+                                    "action":
+                                        {
+                                            "type": "origins:apply_effect",
+                                            "effects":
+                                                [
+                                                    {
+                                                        "effect": "minecraft:strength",
+                                                        "duration": 200,
+                                                        "amplifier": 1
+                                                    },
+                                                    {
+                                                        "effect": "minecraft:nausea",
+                                                        "duration": 400,
+                                                        "amplifier": 1
+                                                    }
+                                                ]
+                                        }
+                                },
+                                {
+                                    "condition":
+                                        {
+                                            "type": "origins:resource",
+                                            "resource": "*:*_resource",
+                                            "comparison": "==",
+                                            "compare_to": 2
+                                        },
+                                    "action":
+                                        {
+                                            "type": "origins:apply_effect",
+                                            "effects":
+                                                [
+                                                    {
+                                                        "effect": "minecraft:strength",
+                                                        "duration": 200,
+                                                        "amplifier": 2
+                                                    },
+                                                    {
+                                                        "effect": "minecraft:nausea",
+                                                        "duration": 400,
+                                                        "amplifier": 2
+                                                    }
+                                                ]
+                                        }
+                                }
+                            ]
+                    }
+            }
+}
