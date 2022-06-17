@@ -70,7 +70,7 @@
                         [
                             {
                                 "type": "origins:execute_command",
-                                "command": "team create opossum_friendly"
+                                "command": "team add opossum_friendly"
                             },
                             {
                                 "type": "origins:execute_command",
