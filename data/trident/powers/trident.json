@@ -14,7 +14,7 @@
 							"type": "origins:ingredient",
 							"ingredient": 
 								{
-									"item": "minecraft:trident"
+									"tag": "trident:tridents"
 								}
 						}
 				},
@@ -29,8 +29,34 @@
 			"type": "origins:modify_projectile_damage",
 			"damage_condition":
 				{
-					"type": "origins:projectile",
-					"projectile": "minecraft:trident"
+					"type": "origins:or",
+					"conditions":
+						[
+							{
+								"type": "origins:projectile",
+								"projectile": "minecraft:trident"
+							},
+							{
+								"type": "origins:projectile",
+								"projectile": "impaled:pitchfork"
+							},
+							{
+								"type": "origins:projectile",
+								"projectile": "impaled:hellfork"
+							},
+							{
+								"type": "origins:projectile",
+								"projectile": "impaled:soulfork"
+							},
+							{
+								"type": "origins:projectile",
+								"projectile": "impaled:elder_trident"
+							},
+							{
+								"type": "origins:projectile",
+								"projectile": "impaled:atlan"
+							}
+						]
 				},
 			"modifier":
 				{
@@ -57,7 +83,7 @@
 							"type": "origins:ingredient",
 							"ingredient": 
 								{
-									"item": "minecraft:trident"
+									"tag": "trident:tridents"
 								}
 						}
 				}
