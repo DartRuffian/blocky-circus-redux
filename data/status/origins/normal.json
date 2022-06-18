@@ -1,0 +1,8 @@
+{
+	"name": "Normal",
+	"description": "An average player in the Blocky Circus.",
+	"icon": "minecraft:dirt",
+	"order": 0,
+	"impact": 0,
+	"powers": []
+}

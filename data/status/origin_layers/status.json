@@ -1,0 +1,13 @@
+{
+    "name": "Status",
+    "order": 11,
+    "default_origin": "status:normal",
+    "origins": 
+        [
+            "status:normal",
+            "status:leadership",
+            "status:peace",
+            "status:oddities",
+            "status:hour"
+        ]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Peace",
+	"description": "The Peace Keeper",
+	"icon":
+        {
+            "item": "minecraft:lantern",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"order": 1,
+	"impact": 0,
+    "hidden": true,
+	"powers": 
+        [
+            "status:peace_lantern"
+        ]
+}
