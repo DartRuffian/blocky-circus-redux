@@ -1,5 +1,5 @@
 {
-	"name": "Adapted Candlefolk (WIP)",
+	"name": "Adapted Candlefolk",
     "description": "A little candle with a bright future.",
 	"icon":
         {
@@ -12,15 +12,15 @@
 	"unchoosable": true,
 	"powers":
         [
-            "candle:living_torch",
-            "candle:fiery_fists",
+            "candle:living_torch_plus",
+            "candle:fiery_fists_plus",
             "candle:climbing",
             "candle:sweet_tooth",
             "candle:small_size",
             "candle:fire_particles",
             "candle:fuel_diet",
             "candle:little_heart",
-            "candle:fast_metabolism",
+            "candle:fast_metabolism_plus",
             "candle:frost_bites",
             "origins:water_vulnerability"
         ]

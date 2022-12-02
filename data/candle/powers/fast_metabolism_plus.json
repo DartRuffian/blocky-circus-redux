@@ -1,0 +1,10 @@
+{
+    "name": "Efficient Metabolism",
+    "description": "You use resources more efficiently, you burn less material than before.",
+    "type": "origins:modify_exhaustion",
+    "modifier": 
+        {
+            "value": 0.3,
+            "operation": "multiply_base"
+        }
+  }
