@@ -2,6 +2,13 @@
     "name": "Brighter Flame",
     "description": "Your flame burns brighter than before, the radius of Living Torch has been increased.",
     "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/candle.png",
+                "text": "The light from your body makes hostile mobs neutral."
+            }
+        ],
     "add": 
         {
             "type": "origins:action_over_time",

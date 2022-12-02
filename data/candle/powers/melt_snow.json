@@ -1,0 +1,40 @@
+{
+    "name": "Melting Flame",
+    "description": "Your brighter flame causes snow and ice to melt. ",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/ice.png",
+                "text": "Ice and Packed Ice melt into Water. Blue Ice does not melt."
+            },
+            {
+                "sprite": "minecraft:textures/block/snow.png",
+                "text": "Snow blocks melt into water, snow layers melt into air."
+            }
+        ],
+    "type": "origins:action_over_time",
+    "interval": 40,
+    "entity_action":
+        {
+            "type": "origins:and",
+            "actions":
+                [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s run fill ~-3 ~-1 ~-3 ~3 ~1 ~3 minecraft:water replace minecraft:ice"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s run fill ~-3 ~-1 ~-3 ~3 ~1 ~3 minecraft:water replace minecraft:packed_ice"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s run fill ~-3 ~-1 ~-3 ~3 ~1 ~3 minecraft:water replace minecraft:snow_block"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s run fill ~-3 ~-1 ~-3 ~3 ~1 ~3 minecraft:air replace minecraft:snow"
+                    }
+                ]
+        }
+}

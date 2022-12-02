@@ -2,6 +2,13 @@
     "name": "Sweet Tooth",
     "description": "Drinking honey will give you a speed boost for a short time.",
     "type": "origins:modify_food",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/honey_bottle.png",
+                "text": "Drink up to gain a speed boost!"
+            }
+        ],
     "item_condition":
         {
             "type": "origins:ingredient",

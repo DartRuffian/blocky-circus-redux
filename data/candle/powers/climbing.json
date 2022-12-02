@@ -2,6 +2,13 @@
     "name": "Sticky Wax",
     "description": "Your wax lets you cling to blocks and climb them.",
     "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/honeycomb.png",
+                "text": "Your sticky body is great for climbing!"
+            }
+        ],
     "toggle": 
         {
             "type": "origins:toggle",

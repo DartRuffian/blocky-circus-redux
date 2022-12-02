@@ -2,6 +2,13 @@
     "name": "Living Torch",
     "description": "All mobs are neutral to you for they fear the light.",
     "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/candle.png",
+                "text": "The light from your body makes hostile mobs neutral."
+            }
+        ],
     "add": 
         {
             "type": "origins:action_over_time",

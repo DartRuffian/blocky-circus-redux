@@ -2,6 +2,13 @@
     "name": "Fiery Fists+",
     "description": "You have higher chance of lighting mobs/players you hit on fire.",
     "type": "origins:target_action_on_hit",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/campfire.png",
+                "text": "Your fists have a 20% chance to light enemies on fire!"
+            }
+        ],
     "entity_action":
         {
             "type": "origins:chance",

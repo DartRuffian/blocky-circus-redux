@@ -2,6 +2,13 @@
     "name": "Fuel the Fire",
     "description": "As a being of pure wax, organic foods do nothing for you. To sustain your flame, you can consume flammable materials.",
     "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/paper.png",
+                "text": "Flammable materials like wood, coal, and paper are good for keeping your flame burning!"
+            }
+        ],
     "candle_diet":
         {
             "type": "apugli:edible_item",

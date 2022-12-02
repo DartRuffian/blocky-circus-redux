@@ -2,6 +2,13 @@
 	"name": "The Frost Bites",
 	"description": "Your small flame can't handle the cold, and will begin to extinguish when in cold biomes and not next to a heat source.",
     "type": "origins:damage_over_time",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/powder_snow_bucket.png",
+                "text": "Keep warm to keep your flame going!"
+            }
+        ],
 	"interval": 20,
 	"onset_delay": 1,
 	"damage": 1,

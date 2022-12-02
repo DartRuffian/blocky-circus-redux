@@ -13,11 +13,14 @@
 	"powers":
         [
             "candle:living_torch_plus",
+            "candle:melt_snow",
             "candle:fiery_fists_plus",
             "candle:climbing",
             "candle:sweet_tooth",
-            "candle:small_size",
+
             "candle:fire_particles",
+            
+            "candle:small_size",
             "candle:fuel_diet",
             "candle:little_heart",
             "candle:fast_metabolism_plus",
