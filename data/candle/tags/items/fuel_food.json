@@ -4,18 +4,23 @@
         [
             "minecraft:lava_bucket",
             "minecraft:blaze_rod",
+            "minecraft:blaze_powder",
             "minecraft:coal",
             "minecraft:charcoal",
             "minecraft:oak_boat",
+            "minecraft:oak_chest_boat",
             "minecraft:spruce_boat",
+            "minecraft:spruce_chest_boat",
             "minecraft:birch_boat",
+            "minecraft:birch_chest_boat",
             "minecraft:jungle_boat",
+            "minecraft:jungle_chest_boat",
             "minecraft:acacia_boat",
+            "minecraft:acacia_chest_boat",
             "minecraft:dark_oak_boat",
+            "minecraft:dark_oak_chest_boat",
             "minecraft:bee_nest",
             "minecraft:beehive",
-            "minecraft:crossbow",
-            "minecraft:bow",
             "minecraft:wooden_pickaxe",
             "minecraft:wooden_shovel",
             "minecraft:wooden_hoe",
@@ -23,6 +28,7 @@
             "minecraft:wooden_sword",
             "minecraft:bowl",
             "minecraft:stick",
-            "minecraft:paper"
+            "minecraft:paper",
+            "minecraft:honeycomb"
         ]
 }

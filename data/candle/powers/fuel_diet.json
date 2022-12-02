@@ -46,11 +46,11 @@
                             },
                             {
                                 "type": "apoli:ingredient",
+                                "inverted": true,
                                 "ingredient":
                                     {
                                         "tag": "candle:honey"
-                                    },
-                                "inverted": true
+                                    }
                             }
                         ]
                 }
