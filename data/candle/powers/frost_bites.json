@@ -12,54 +12,66 @@
 	"interval": 20,
 	"onset_delay": 1,
 	"damage": 1,
-	"damage_easy": 1,
 	"source": 
         {
             "name": "generic",
             "unblockable": true,
             "bypasses_armor": false
         },
-	"condition": 
+    "condition": 
         {
-            "type": "origins:biome",
-            "condition": 
-                {
-                    "type": "origins:temperature",
-                    "comparison": "<=",
-                    "compare_to": 0.05
-                },
-	        "entity_condition": 
-                {
-                    "type": "origins:in_tag",
-                    "inverted": true,
-                    "equipment_slot": "mainhand",
-                    "item_condition": 
-                        {
-                            "type": "origins:in_tag",
-                            "conditions": 
-                                [
-                                    {
-                                        "type": "minecraft:torch"
-                                    },
-                                    {
-                                        "type": "minecraft:lava_bucket"
-                                    },
-                                    {
-                                        "type": "origins:block_in_radius",
-                                        "inverted": true,
-                                        "block_condition": 
-                                            {
-                                                "type": "origins:in_tag",
-                                                "tag": "origins:lava"
-                                            },
-                                        "radius": 4,
-                                        "shape": "cube",
-                                        "comparison": ">=",
-                                        "compare_to": 1
-                                    }
-                                ]
-                        }
-                }
-	    }
+            "type": "origins:and",
+            "conditions": 
+                [
+                    {
+                        "type": "origins:biome",
+                        "condition": 
+                            {
+                                "type": "origins:temperature",
+                                "comparison": "<=",
+                                "compare_to": 0.05
+                            }
+                    },
+                    {
+                        "type": "origins:or",
+                        "inverted": true,
+                        "conditions":
+                            [
+                                {
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "mainhand",
+                                    "item_condition":
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient":
+                                                {
+                                                    "tag": "utils:heat_items"
+                                                }
+                                        }
+                                },
+                                {
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "offhand",
+                                    "item_condition":
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient":
+                                                {
+                                                    "tag": "utils:heat_items"
+                                                }
+                                        }
+                                },
+                                {
+                                    "type": "origins:block_in_radius",
+                                    "block_condition":
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "utils:heat_blocks"
+                                        },
+                                    "radius": 4
+                                }
+                            ]
+                    }
+                ]
+        }
 }
-	  

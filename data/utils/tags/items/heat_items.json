@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values":
+        [
+            "minecraft:torch",
+            "minecraft:magma_block",
+            "minecraft:lava_bucket",
+            "minecraft:blaze_rod",
+            "minecraft:blaze_powder",
+            "minecraft:campfire"
+        ]
+}
