@@ -38,7 +38,7 @@
                                             },
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "team join opossum_friendly"
+                                                "command": "team join origin_friendly"
                                             }
                                         ]
                                 }
@@ -70,11 +70,11 @@
                         [
                             {
                                 "type": "origins:execute_command",
-                                "command": "team add opossum_friendly"
+                                "command": "team add origin_friendly"
                             },
                             {
                                 "type": "origins:execute_command",
-                                "command": "team join opossum_friendly"
+                                "command": "team join origin_friendly"
                             }
                         ]
                 },

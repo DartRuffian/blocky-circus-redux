@@ -1,7 +1,0 @@
-{
-  "name": "Nether Rebirth",
-  "description": "Soul Valleys are where the Souls come back to life...",
-  "type": "origins:modify_player_spawn",
-  "dimension": "minecraft:the_nether",
-  "structure": "minecraft:nether_fossil"
-}

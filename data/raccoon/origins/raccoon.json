@@ -17,7 +17,7 @@
 			"raccoon:fast_metabolism",
 			"raccoon:burrower",
 			"origins:fragile",
-			"base:reset_drag_kill"
+			"utils:reset_drag_kill"
 		],
 	"upgrades":
 		[

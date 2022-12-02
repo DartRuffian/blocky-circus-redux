@@ -1,6 +1,6 @@
 {
     "name": "Hidden in Plain Sight",
-    "description": "Using the primary key while sneaking, you can go practically invisible. Though you are still targeted by hostile mobs, and you can't go invisible with less than 3 hearts.",
+    "description": "Using the primary key while sneaking, you can become partially invisible. You are still targeted by hostile mobs, but can't go invisible with less than 3 hearts.",
     "type": "origins:model_color",
     "alpha": 0.03,
     "condition":

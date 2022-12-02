@@ -1,6 +1,6 @@
 {
     "name": "Antivenom",
-    "description": "You are immune to negative effects like Poison, Nausea, Hunger, etc.",
+    "description": "You are immune to Poison, Nausea, and Hunger.",
     "type": "origins:effect_immunity",
     "effects":
         [

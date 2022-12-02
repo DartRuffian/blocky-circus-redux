@@ -1,6 +1,6 @@
 {
     "name": "Snatch",
-	"description": "You have gained a nack for grabing things right out of peoples hands",
+	"description": "You've gained the ability to steal another player's held item when punching them, but this doesn't work every time.",
     "type": "origins:target_action_on_hit",
     "cooldown": 600,
     "entity_action": 

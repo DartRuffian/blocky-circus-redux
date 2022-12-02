@@ -1,6 +1,6 @@
 {
     "name": "Itty Bitty",
-    "description": "You are slightly smaller than others.Due to your small size, you are unable to jump.\n(Requires Extra Origins)",
+    "description": "You are slightly smaller than others. Due to your small size, you are unable to jump.\n(Requires Extra Origins)",
     "type": "origins:multiple",
     "size_modifier":
         {

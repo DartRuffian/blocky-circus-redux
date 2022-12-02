@@ -20,7 +20,7 @@
                                         "action": 
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "team join candle_friendly @s"
+                                                "command": "team join origin_friendly @s"
                                             }
                                     },
                                     {
@@ -28,7 +28,7 @@
                                         "action": 
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "team join candle_friendly @s"
+                                                "command": "team join origin_friendly @s"
                                             }
                                         }
                                 ]
@@ -65,12 +65,12 @@
         "entity_action_gained":
             {
                 "type": "origins:execute_command",
-                "command": "team add candle_friendly"
+                "command": "team add origin_friendly"
             },
        "entity_action_lost": 
             {
                 "type": "origins:execute_command",
-                "command": "team empty candle_friendly"
+                "command": "team empty origin_friendly"
             }
-    }
+        }
 }
