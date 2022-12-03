@@ -1,5 +1,5 @@
 {
-	"name": "Adapted Moth",
+	"name": "Iron Moth",
     "description": "Having killing the Ender Dragon, your eyes and body have adapted to the sun.",
 	"icon":
         {
@@ -19,6 +19,7 @@
             "moth:light_buff",
             "moth:no_prick_dmg",
             "origins:cat_vision",
+            "utils:wavy_cap",
 
             "utils:ride_player",
 
