@@ -1,6 +1,14 @@
 {
     "name": "Wet Wings",
-    "description": "Water weighs you down, so you move slower and are weaker while wet",
+    "description": "Water weighs you down, so you move slower and are weaker while wet.",
+    "badges":
+        [
+            {
+                "type": "origins:tooltip",
+                "sprite": "minecraft:textures/block/water_bucket.png",
+                "text": "You get Slowness and Weakness while in water, and only Slowness in rain."
+            }
+        ],
 
     "type": "origins:multiple",
     "rain_slowness":

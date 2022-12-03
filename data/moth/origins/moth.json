@@ -7,7 +7,7 @@
         [
             "moth:elytra",
             "moth:fly_dmg_boost",
-            "moth:energy",
+            "moth:energy", 
             "moth:flutter",
             "moth:moth_size",
             "moth:light_buff",
@@ -26,7 +26,7 @@
 	"upgrades":
 		[
 			{
-				"condition": "minecraft:end/kill_dragon",
+				"condition": "minecraft:end/dragon_egg",
 				"origin": "moth:adapted_moth",
                 "announcement": "A sacrifice worthy of a ruler! Your body has been improved with the dragon's power"
 			}
