@@ -1,6 +1,6 @@
 {
     "name": "Cow Chow",
-    "description": "As a cow, you are only able to eat wheat, but as a Moobloom you can also drink honey",
+    "description": "As a cow, you are only able to eat wheat, but as a Moobloom you can also drink honey.",
     "type": "origins:multiple",
     "badges":
         [
