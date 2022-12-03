@@ -6,7 +6,7 @@
         [
             {
                 "sprite": "minecraft:textures/item/string.png",
-                "text": "You're able to eat cloth and wooden items"
+                "text": "You're only able to eat cloth and wooden items"
             }
         ],
     "prevent_normal_food":
