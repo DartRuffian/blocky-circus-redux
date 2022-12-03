@@ -4,7 +4,7 @@
     "entity_action_added": 
         {
             "type": "origins:execute_command",
-            "command": "advancement revoke @s only minecraft:end/kill_dragon",
+            "command": "advancement revoke @s only minecraft:nether/return_to_sender",
             "permission_level": 4
         },
     "execute_chosen_when_orb": true

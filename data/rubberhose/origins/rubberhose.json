@@ -16,7 +16,8 @@
 			
 			"rubberhose:water_slowness",
 			"moobloom:fire_damage",
-			"rubberhose:hoe_damage"
+			"rubberhose:hoe_damage",
+			"utils:reset_sender"
         ],
 	"upgrades":
 		[
