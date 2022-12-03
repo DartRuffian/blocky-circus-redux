@@ -7,7 +7,7 @@
             "amount": 1,
             "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
         },
-	"impact": 1,
+	"impact": 2,
 	"unchoosable": true,
     "powers":
         [
