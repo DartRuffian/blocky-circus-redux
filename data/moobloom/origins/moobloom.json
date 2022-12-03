@@ -1,0 +1,26 @@
+{
+	"name": "Moobloom",
+	"description": "Half cow, half flower, all joy!",
+	"icon": "friendsandfoes:buttercup",
+	"impact": 1,
+	"powers":
+        [
+			"moobloom:passive_bees",
+			"moobloom:pollen_buff",
+			"moobloom:photosynthesis",
+			"moobloom:leather_hide",
+
+			"moobloom:flower_path",
+
+			"moobloom:cow_diet",
+			"moobloom:fire_damage"
+        ],
+	"upgrades":
+		[
+			{
+				"condition": "friendsandfoes:husbandry/beehive",
+				"origin": "moobloom:adapted_moobloom",
+				"announcement": "From gathering all the types of beehives, you feel yourself begin to change, check your Origin!"
+			}
+		]
+}

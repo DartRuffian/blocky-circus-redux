@@ -1,0 +1,25 @@
+{
+	"name": "Adapted Moobloom",
+    "description": "Half cow, half flower, all joy!",
+	"icon":
+        {
+            "item": "friendsandfoes:buttercup",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"impact": 1,
+	"unchoosable": true,
+    "powers":
+        [
+            "moobloom:passive_bees",
+            "moobloom:pollen_buff",
+            "moobloom:photosynthesis",
+            "moobloom:leather_hide",
+            "moobloom:flower_peace",
+
+            "moobloom:flower_path",
+
+            "moobloom:cow_diet",
+            "moobloom:fire_damage"
+        ]
+}

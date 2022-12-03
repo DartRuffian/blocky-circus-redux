@@ -1,0 +1,19 @@
+{
+    "name": "Cowhide",
+    "description": "You have naturally thick skin that is equivalent to wearing leather armor.",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/leather.png",
+                "text": "Your thick hide protects you"
+            }
+        ],
+    "type": "origins:attribute",
+    "modifier":
+        {
+            "name": "Natural Armor health bonus",
+            "attribute": "minecraft:generic.armor",
+            "value": 7.0,
+            "operation": "addition"
+        }       
+  }

@@ -1,0 +1,30 @@
+{
+    "name": "Friend of Bees",
+    "description": "Bees know you're a friend, so they don't get angry at you!",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/bee_nest_front_honey.png",
+                "text": "Bees are always friendly to you"
+            }
+        ],
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action":
+        {
+            "type": "origins:and",
+            "actions":
+                [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[type=minecraft:bee,distance=..10] if data entity @s AngryAt run data modify entity @s AngerTime set value 0",
+                        "permission_level": 4
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[type=minecraft:bee,distance=..10] if data entity @s AngryAt run data remove entity @s AngryAt",
+                        "permission_level": 4
+                    }
+                ]
+        }
+}

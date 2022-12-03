@@ -1,0 +1,83 @@
+{
+    "name": "Friendly Flower",
+    "description": "Your peaceful precense makes hostile mobs neutral.",
+    "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/lily_of_the_valley.png",
+                "text": "Your soothing smells makes hostile mobs passive"
+            }
+        ],
+    "add": 
+        {
+            "type": "origins:action_over_time",
+            "interval": 1,
+            "entity_action":
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 16,
+                    "bientity_action": 
+                        {
+                            "type": "origins:and",
+                            "actions": 
+                                [
+                                    {
+                                        "type": "origins:target_action",
+                                        "action": 
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "team join origin_friendly @s"
+                                            }
+                                    },
+                                    {
+                                        "type": "origins:actor_action",
+                                        "action": 
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "team join origin_friendly @s"
+                                            }
+                                        }
+                                ]
+                        }
+                },
+            "bientity_condition":
+                {
+                    "type": "origins:target_condition",
+                    "condition": 
+                        {
+                            "type": "origins:and",
+                            "conditions": 
+                                [
+                                    {
+                                        "type": "origins:living"
+                                    },
+                                    {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:armor_stand",
+                                        "inverted": true
+                                    },
+                                    {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player",
+                                        "inverted": true
+                                    }
+                                ]
+                        }
+                }
+        },
+    "create":
+        {
+        "type": "origins:action_on_callback",
+        "entity_action_gained":
+            {
+                "type": "origins:execute_command",
+                "command": "team add origin_friendly"
+            },
+       "entity_action_lost": 
+            {
+                "type": "origins:execute_command",
+                "command": "team empty origin_friendly"
+            }
+        }
+}

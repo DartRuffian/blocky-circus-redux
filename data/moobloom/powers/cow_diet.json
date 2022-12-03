@@ -1,0 +1,74 @@
+{
+    "name": "Cow Chow",
+    "description": "As a cow, you are only able to eat wheat, but as a Moobloom you can also drink honey",
+    "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/wheat.png",
+                "text": "Wheat gives 4 hunger, and 4 saturation"
+            },
+            {
+                "sprite": "minecraft:textures/item/honey_bottle.png",
+                "text": "Honey bottles also grant extra saturation, for a total of 6"
+            }
+        ],
+    "edible_wheat":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "item": "minecraft:wheat"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 4,
+                    "saturation": 1
+                },
+            "use_action": "eat"
+        },
+    "better_honey":
+        {
+            "type": "origins:modify_food",
+            "item_condition":
+                {
+                    "type": "origins:ingredient",
+                    "ingredient":
+                        {
+                            "item": "minecraft:honey_bottle"
+                        }
+                },
+            "saturation_modifier": 
+                {
+                    "name": "Better Honey Sat",
+                    "operation": "multiply_base",
+                    "value": 4
+                }
+        },
+    "prevent_normal_food":
+        {
+            "type": "origins:prevent_item_use",
+            "item_condition": 
+                {
+                    "type": "origins:and",
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:food"
+                            },
+                            {
+                                "type": "apoli:ingredient",
+                                "inverted": true,
+                                "ingredient":
+                                    {
+                                        "tag": "moobloom:cow_diet_items"
+                                    }
+                            }
+                        ]
+                }
+        }
+}

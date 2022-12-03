@@ -1,0 +1,113 @@
+{
+    "name": "Flowery Friend",
+    "description": "As you walk, there is a chance dandelions and sunflowers will passively spawn on grass blocks around you!",
+    "type": "origins:multiple",
+    "flowers":
+        {
+            "type": "origins:action_over_time",
+            "entity_action":
+                {
+                    "type": "origins:chance",
+                    "action":
+                        {
+                            "type": "origins:choice",
+                            "actions":
+                                [
+                                    {
+                                        "element":
+                                            {
+                                                "type": "origins:block_action_at",
+                                                "block_action":
+                                                    {
+                                                        "type": "origins:set_block",
+                                                        "block": "minecraft:dandelion"
+                                                    }
+                                            },
+                                        "weight": 40
+                                    },
+                                    {
+                                        "element":
+                                            {
+                                                "type": "origins:block_action_at",
+                                                "block_action":
+                                                    {
+                                                        "type": "origins:set_block",
+                                                        "block": "friendsandfoes:buttercup"
+                                                    }
+                                            },
+                                        "weight": 40
+                                    },
+                                    {
+                                        "element":
+                                            {
+                                                "type": "origins:block_action_at",
+                                                "block_action":
+                                                    {
+                                                        "type": "origins:and",
+                                                        "actions":
+                                                            [
+                                                                {
+                                                                    "type": "origins:set_block",
+                                                                    "block": "minecraft:sunflower"
+                                                                },
+                                                                {
+                                                                    "type": "origins:add_block",
+                                                                    "block": "minecraft:sunflower[half=upper]"
+                                                                }
+                                                            ]
+                                                    }
+                                            },
+                                        "weight": 20
+                                    }
+                                ]
+                        },
+                    "chance": 0.1
+                },
+            "interval": 5,
+            "condition":
+                {
+                    "type": "origins:and",
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:block_in_radius",
+                                "block_condition":
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:grass_block"
+                                    },
+                                "radius": 2,
+                                "shape": "sphere",
+                                "comparison": ">=",
+                                "compare_to": 4
+                            },
+                            {
+                                "type": "origins:power_active",
+                                "power": "*:*_toggle"
+                            },
+                            {
+                                "type": "origins:moving"
+                            }
+                        ]
+                }
+        },
+    "particles":
+        {
+            "type": "origins:particle",
+            "particle": "minecraft:wax_on",
+            "frequency": 4,
+            "visible_in_first_person": true,
+            "condition":
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+        },
+    "toggle":
+        {
+            "type": "origins:toggle",
+            "active_by_default": true,
+            "key": { "key": "key.origins.secondary_active" },
+            "retain_state": true
+        }
+  }

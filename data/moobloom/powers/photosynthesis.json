@@ -1,0 +1,32 @@
+{
+    "name": "Photosynthesis",
+    "description": "Being part plant has its perks! One of them is getting most of your energy from the sun.",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/sunflower_front.png",
+                "text": "The sun replenishes your hunger"
+            }
+        ],
+    "type": "origins:action_over_time",
+    "interval": 40,
+    "entity_action":
+        {
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 1
+        },
+    "condition":
+        {
+            "type": "origins:and",
+            "conditions":
+                [
+                    {
+                        "type": "origins:daytime"
+                    },
+                    {
+                        "type": "origins:exposed_to_sky"
+                    }
+                ]
+        }
+  }

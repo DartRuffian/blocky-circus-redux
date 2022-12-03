@@ -1,0 +1,68 @@
+{
+    "name": "Pollinator",
+    "description": "Your love of honey and pollen gives you a speed boost and regeneration when near a hive or flower respectively!",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/block/beehive_front_honey.png",
+                "text": "Bee Nests and Beehives give Speed"
+            },
+            {
+                "sprite": "minecraft:textures/block/dandelion.png",
+                "text": "Flowers give Regeneration"
+            }
+        ],
+    "type": "origins:multiple",
+    "hive_buff":
+        {
+            "type": "origins:stacking_status_effect",
+            "min_stacks": 0,
+            "max_stacks": 1,
+            "duration_per_stack": 30,
+            "effects":
+                [
+                    {
+                        "effect": "minecraft:speed",
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ],
+            "condition":
+                {
+                    "type": "origins:block_in_radius",
+                    "radius": 30,
+                    "block_condition":
+                        {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:beehives"
+                        }
+                }
+        },
+    "flower_buff":
+    {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 30,
+        "effects":
+            [
+                {
+                    "effect": "minecraft:regeneration",
+                    "is_ambient": true,
+                    "show_particles": false,
+                    "show_icon": true
+                }
+            ],
+        "condition":
+            {
+                "type": "origins:block_in_radius",
+                "radius": 30,
+                "block_condition":
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:flower"
+                    }
+            }
+    }
+}
