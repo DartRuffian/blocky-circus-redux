@@ -11,5 +11,17 @@
 	"unchoosable": true,
     "powers":
         [
+			"rubberhose:pocket",
+			"rubberhose:pie_flight",
+			"rubberhose:springy",
+			"rubberhose:gravity",
+			"rubberhose:falling_anvil",
+			"origins:extra_reach",
+			
+			"rubberhose:punch_sfx",
+			
+			"rubberhose:water_slowness",
+			"rubberhose:fire_damage",
+			"rubberhose:hoe_damage"
         ]
 }
