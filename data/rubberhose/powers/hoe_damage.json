@@ -1,6 +1,21 @@
 {
-    "name":"wobbly arms",
-    "description": "due to being a cartoon your damage is greatly reduced unless wielding hoes, hoes deal more damage",
+    "name": "Wobbly Arms",
+    "description": "Your paper arms aren't very good at holding regular weapons, requiring you to use a dual wielded weapon.\nYou deal 70% less damage with all weapons, but instead do additional damage with hoes.",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/wooden_hoe.png",
+                "text": "Wooden and Stone Hoes deal +3 damage"
+            },
+            {
+                "sprite": "minecraft:textures/item/iron_hoe.png",
+                "text": "Iron and Golden Hoes deal +4 damage"
+            },
+            {
+                "sprite": "minecraft:textures/item/netherite_hoe.png",
+                "text": "Diamond and Netherite Hoes deal +5 damage"
+            }
+        ],
     
     "type":"origins:multiple",
     "decreased_damage":
@@ -68,7 +83,7 @@
             "modifier":
                 {
                     "operation": "addition",
-                    "value": 6.5
+                    "value": 5
                 },
             "condition":
                 {

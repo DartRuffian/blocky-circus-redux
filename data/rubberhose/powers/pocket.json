@@ -4,8 +4,9 @@
     "badges":
         [
             {
+                "type": "origins:keybind",
                 "sprite": "minecraft:textures/item/bundle.png",
-                "text": "Your secret pockets has 9 inventory slots"
+                "text": "Your secret pockets has 9 inventory slots.\nOpen it with %s."
             }
         ],
 
@@ -14,7 +15,7 @@
     "drop_on_death": true,
     "key":
         {
-            "key": "key.origins.ternary_active"
+            "key": "key.origins.primary_active"
         }
     
 }

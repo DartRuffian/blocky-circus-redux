@@ -1,17 +1,12 @@
 {
 	"name": "What's that Smell?",
-	"description": "After eating a pumpkin pie, you gain the ability to fly through the air for 10 seconds!\n(WIP, currently just a toggle)",
+	"description": "After eating a pumpkin pie, you gain the ability to fly through the air for 10 seconds!",
 	"badges":
         [
             {
                 "sprite": "minecraft:textures/item/pumpkin_pie.png",
                 "text": "Mmmmm delicious"
-            },
-			{
-				"type": "origins:keybind",
-				"sprite": "origins:textures/gui/badge/toggle.png",
-				"text": "Toggle with %s."
-			}
+            }
         ],
 	"type": "origins:multiple",
 	"swim_fly":
@@ -19,18 +14,33 @@
 			"type": "origins:swimming",
 			"condition":
 				{
-					"type": "origins:power_active",
-					"power": "*:*_pie_toggle"
+					"type": "origins:resource",
+					"resource": "*:*_timer",
+					"comparison": ">",
+					"compare_to": 1
 				}
 		},
-	"pie_toggle":
+
+	"food_toggle":
 		{
-			"type": "origins:toggle",
-			"key":
+			"type": "origins:action_on_item_use",
+			"entity_action":
 				{
-					"key": "key.origins.primary_active",
-					"continuous": false
+					"type": "origins:trigger_cooldown",
+					"power": "*:*_timer"
+				},
+			"item_condition":
+				{
+					"type": "origins:ingredient",
+					"ingredient": { "item": "minecraft:pumpkin_pie" }
 				}
+		},
+
+	"timer":
+		{
+			"type": "origins:cooldown",
+			"cooldown": 200,
+			"hud_render": { "bar_index": 4 }
 		}
 }
 
