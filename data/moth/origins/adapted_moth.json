@@ -1,0 +1,30 @@
+{
+	"name": "Adapted Moth",
+    "description": "Having killing the Ender Dragon, your eyes and body have adapted to the sun.",
+	"icon":
+        {
+            "item": "minecraft:lantern",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"impact": 3,
+	"unchoosable": true,
+    "powers":
+        [
+            "moth:elytra",
+            "moth:fly_dmg_boost",
+            "moth:energy",
+            "moth:flutter",
+            "moth:moth_size",
+            "moth:light_buff",
+            "moth:no_prick_dmg",
+            "origins:cat_vision",
+
+            "extraorigins:jockey",
+
+            "moth:moth_diet",
+            "moth:fragile",
+            "moth:wet_wings",
+            "moobloom:fire_damage"
+        ]
+}

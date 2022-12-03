@@ -1,0 +1,23 @@
+{
+	"name": "Little Moth",
+  	"description": "Given your insect heritage, your naturally smaller. Your not even a block tall! You also don't alert Sculk Sensors or Shriekers from walking!",
+	"badges":
+		[
+			{
+				"type": "origins:tooltip",
+				"sprite": "minecraft:textures/block/sculk_shrieker_side.png",
+				"text": "You don't trigger Sculk Sensors from walking or flying with an elytra"
+			}
+		],
+	"type": "origins:multiple",
+	"size_modifier":
+		{
+			"type": "extraorigins:modify_size",
+			"scale": 0.25
+		},
+	"no_vibrations":
+		{
+			"type": "origins:prevent_game_event",
+			"event": "minecraft:step"
+		}
+  }

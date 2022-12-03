@@ -1,0 +1,34 @@
+{
+	"name": "Mothling",
+    "description": "You're an itty bitty teeny moth!",
+	"icon": "minecraft:lantern",
+	"impact": 3,
+	"powers":
+        [
+            "moth:elytra",
+            "moth:fly_dmg_boost",
+            "moth:energy",
+            "moth:flutter",
+            "moth:moth_size",
+            "moth:light_buff",
+            "moth:no_prick_dmg",
+            "origins:cat_vision",
+
+            "extraorigins:jockey",
+
+            "moth:moth_diet",
+            "moth:fragile",
+            "moth:wet_wings",
+            "moth:day_weakness",
+            "moobloom:fire_damage",
+            "utils:reset_drag_kill"
+        ],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:end/kill_dragon",
+				"origin": "moth:adapted_moth",
+                "announcement": "A sacrifice worthy of a ruler! Your body has been improved with the dragon's power"
+			}
+		]
+}

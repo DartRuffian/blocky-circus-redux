@@ -1,0 +1,37 @@
+{
+    "name": "Light Body",
+    "description": "Being small has it's perks. prickly plants, high falls, and crash landings don't hurt.",
+    "badges":
+        [
+            {
+                "type": "origins:tooltip",
+                "sprite": "minecraft:textures/item/sweet_berries.png",
+                "text": "You're immune to all thing prickly"
+            }
+        ],
+
+    "type": "origins:invulnerability",
+    "damage_condition":
+        {
+            "type": "origins:or",
+            "conditions": 
+                [
+                    {
+                        "type": "origins:name",
+                        "name": "fall"
+                    },
+                    {
+                        "type": "origins:name",
+                        "name": "flyIntoWall"
+                    },
+                    {
+                        "type": "origins:name",
+                        "name": "sweetBerryBush"
+                    },
+                    {
+                        "type": "origins:name",
+                        "name": "cactus"
+                    }
+                ]
+        }
+}

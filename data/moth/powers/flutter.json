@@ -1,0 +1,178 @@
+{
+    "name": "Flutter",
+    "description": "You can flap your wings to take off into the air!\nYou can do a small jump or a small jump.",
+    "badges":
+        [
+            {
+                "type": "origins:tooltip",
+                "sprite": "minecraft:textures/item/water_bucket.png",
+                "text": "You're unable to fly while wet"
+            },
+            {
+                "type": "origins:keybind",
+                "sprite": "minecraft:textures/item/phantom_membrane.png",
+                "text": "Press %s to do a small jump! (Costs 1 Energy)"
+            },
+            {
+                "type": "origins:tooltip",
+                "sprite": "minecraft:textures/item/elytra.png",
+                "text":
+                    [
+                        "Press [",
+                        { "keybind": "key.origins.secondary_active" },
+                        "] to do a large jump! (Costs 3 Energy)"
+                    ]
+            }
+        ],
+    "type": "origins:multiple",
+    "small_jump":
+        {
+            "type": "origins:active_self",
+            "key": "key.origins.primary_active",
+            "cooldown": 10,
+            "entity_action":
+                {
+                    "type": "origins:and",
+                    "actions":
+                        [
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.parrot.fly",
+                                "volume": 0.5,
+                                "pitch": 1
+                            },
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 0.5,
+                                "z": 0.4,
+                                "space": "local",
+                                "client": true,
+                                "server": true
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:energy_resource",
+                                "change": -1,
+                                "operation": "add"
+                            },
+                            {
+                                "type": "origins:exhaust",
+                                "amount": 0.6
+                            }
+                        ]
+                },
+            "condition":
+                {
+                    "type": "origins:and",
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:energy_resource",
+                                "comparison": ">",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:or",
+                                "inverted": true,
+                                "conditions":
+                                    [
+                                        {
+                                            "type": "origins:in_rain"
+                                        },
+                                        {
+                                            "type": "origins:in_block",
+                                            "block_condition":
+                                                {
+                                                    "type": "origins:fluid",
+                                                    "fluid_condition":
+                                                        {
+                                                            "type": "origins:in_tag",
+                                                            "tag": "minecraft:water"
+                                                        }
+                                                }
+                                        }
+                                    ]
+                            }
+                        ]
+                }
+        },
+    "large_jump":
+        {
+            "type": "origins:active_self",
+            "key": "key.origins.secondary_active",
+            "cooldown": 300,
+            "entity_action":
+                {
+                    "type": "origins:and",
+                    "actions":
+                        [
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.parrot.fly",
+                                "volume": 0.5,
+                                "pitch": 1
+                            },
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 1.5,
+                                "z": 0.5,
+                                "space": "local",
+                                "client": true,
+                                "server": true
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:energy_resource",
+                                "change": -3,
+                                "operation": "add"
+                            },
+                            {
+                                "type": "origins:exhaust",
+                                "amount": 0.6
+                            }
+                        ]
+                },
+            "condition":
+                {
+                    "type": "origins:and",
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:energy_resource",
+                                "comparison": ">",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:or",
+                                "inverted": true,
+                                "conditions":
+                                    [
+                                        {
+                                            "type": "origins:in_rain"
+                                        },
+                                        {
+                                            "type": "origins:in_block",
+                                            "block_condition":
+                                                {
+                                                    "type": "origins:fluid",
+                                                    "fluid_condition":
+                                                        {
+                                                            "type": "origins:in_tag",
+                                                            "tag": "minecraft:water"
+                                                        }
+                                                }
+                                        }
+                                    ]
+                            }
+                        ]
+                },
+            "hud_render":
+                {
+                    "should_render": true,
+                    "sprite_location": "origins:textures/gui/resource_bar.png",
+                    "bar_index": 4
+                }
+        }
+}

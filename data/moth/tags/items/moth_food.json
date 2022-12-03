@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values":
+        [
+            "minecraft:leather",
+            "minecraft:paper",
+            "minecraft:wheat",
+            "minecraft:book"
+        ]
+}

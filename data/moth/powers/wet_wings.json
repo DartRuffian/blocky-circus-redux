@@ -1,0 +1,78 @@
+{
+    "name": "Wet Wings",
+    "description": "Water weighs you down, so you move slower and are weaker while wet",
+
+    "type": "origins:multiple",
+    "rain_slowness":
+        {
+            "type": "origins:stacking_status_effect",
+            "min_stacks": 0,
+            "max_stacks": 30,
+            "duration_per_stack": 20,
+            "tick_rate": 10,
+
+            "effects":
+                [
+                    {
+                        "effect": "minecraft:slowness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ],
+            "condition":
+                {
+                    "type": "origins:in_rain"
+                }
+        },
+    "water_weakness":
+        {
+            "type": "origins:stacking_status_effect",
+            "min_stacks": 0,
+            "max_stacks": 30,
+            "duration_per_stack": 20,
+            "tick_rate": 10,
+
+            "effects":
+                [
+                    {
+                        "effect": "minecraft:weakness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    },
+                    {
+                        "effect": "minecraft:slowness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ],
+            "condition":
+                {
+                    "type": "origins:or",
+                    "inverted": true,
+                    "conditions":
+                        [
+                            {
+                                "type": "origins:in_rain"
+                            },
+                            {
+                                "type": "origins:in_block",
+                                "block_condition":
+                                    {
+                                        "type": "origins:fluid",
+                                        "fluid_condition":
+                                            {
+                                                "type": "origins:in_tag",
+                                                "tag": "minecraft:water"
+                                            }
+                                    }
+                            }
+                        ]
+                }
+        }
+}

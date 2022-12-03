@@ -4,6 +4,7 @@
     "allow_random": false,
     "origins": 
         [
+            "utils:human",
             "raccoon:raccoon",
             "raccoon:adapted_raccoon",
             "opossum:opossum",
@@ -13,6 +14,8 @@
             "moobloom:moobloom",
             "moobloom:adapted_moobloom",
             "rubberhose:rubberhose",
-            "rubberhose:adapted_rubberhose"
+            "rubberhose:adapted_rubberhose",
+            "moth:moth",
+            "moth:adapted_moth"
         ]
 }

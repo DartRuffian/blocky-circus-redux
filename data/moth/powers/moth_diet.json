@@ -1,0 +1,141 @@
+{
+    "name": "Fabric Muncher",
+    "description": "You eat fabric instead of the gross normal food like everyone else. This includes wools, leather, paper, and wheat.",
+    "type": "origins:multiple",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/string.png",
+                "text": "You're able to eat cloth and wooden items"
+            }
+        ],
+    "prevent_normal_food":
+        {
+            "type": "origins:prevent_item_use",
+            "item_condition": 
+                {
+                    "type": "origins:food"
+                }
+        },
+    "diet_banners_beds":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "origins:or",
+                    "conditions":
+                        [
+                            {
+                                "type": "apoli:ingredient",
+                                "ingredient": 
+                                    {
+                                        "tag": "minecraft:banners"
+                                    }
+                            },
+                            {
+                                "type": "apoli:ingredient",
+                                "ingredient": 
+                                    {
+                                        "tag": "minecraft:beds"
+                                    }
+                            }
+                        ]
+                },
+            "food_component": 
+                {
+                    "hunger": 12,
+                    "saturation": 0.5
+                },
+            "use_action": "eat"
+        },
+    "diet_logs":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "minecraft:logs_that_burn"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 2,
+                    "saturation": 1
+                },
+            "use_action": "eat"
+        },
+    "diet_carpets":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "minecraft:wool_carpets"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 1,
+                    "saturation": 2
+                },
+            "use_action": "eat"
+        },
+    "diet_flowers":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "minecraft:flowers"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 2,
+                    "saturation": 4
+                },
+            "use_action": "eat"
+        },
+    "diet_wool":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "minecraft:wool"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 6,
+                    "saturation": 1
+                },
+            "use_action": "eat"
+        },
+    "diet_other":
+        {
+            "type": "apugli:edible_item",
+            "item_condition": 
+                {
+                    "type": "apoli:ingredient",
+                    "ingredient": 
+                        {
+                            "tag": "moth:moth_food"
+                        }
+                },
+            "food_component": 
+                {
+                    "hunger": 3,
+                    "saturation": 1
+                },
+            "use_action": "eat"
+        }
+}
