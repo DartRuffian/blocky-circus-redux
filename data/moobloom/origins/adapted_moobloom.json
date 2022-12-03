@@ -20,6 +20,6 @@
             "moobloom:flower_path",
 
             "moobloom:cow_diet",
-            "moobloom:fire_damage"
+            "utils:fire_damage"
         ]
 }

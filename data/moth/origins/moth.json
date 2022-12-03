@@ -20,7 +20,7 @@
             "moth:fragile",
             "moth:wet_wings",
             "moth:day_weakness",
-            "moobloom:fire_damage",
+            "utils:fire_damage",
             "utils:reset_drag_kill"
         ],
 	"upgrades":

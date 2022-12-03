@@ -25,6 +25,6 @@
             "moth:moth_diet",
             "moth:fragile",
             "moth:wet_wings",
-            "moobloom:fire_damage"
+            "utils:fire_damage"
         ]
 }

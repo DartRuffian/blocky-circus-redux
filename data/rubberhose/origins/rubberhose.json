@@ -15,7 +15,7 @@
 			"rubberhose:punch_sfx",
 			
 			"rubberhose:water_slowness",
-			"moobloom:fire_damage",
+			"utils:fire_damage",
 			"rubberhose:hoe_damage",
 			"utils:reset_sender"
         ],
