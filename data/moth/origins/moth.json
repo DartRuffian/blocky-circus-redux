@@ -21,7 +21,7 @@
             "moth:wet_wings",
             "moth:day_weakness",
             "utils:fire_damage",
-            "utils:reset_drag_kill"
+            "utils:reset_egg_hold"
         ],
 	"upgrades":
 		[
