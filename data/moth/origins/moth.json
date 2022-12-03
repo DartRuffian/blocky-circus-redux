@@ -14,7 +14,7 @@
             "moth:no_prick_dmg",
             "origins:cat_vision",
 
-            "extraorigins:jockey",
+            "utils:ride_player",
 
             "moth:moth_diet",
             "moth:fragile",

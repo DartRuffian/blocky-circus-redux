@@ -1,0 +1,14 @@
+{
+    "name": "Jockey",
+    "description": "You can ride another player by pressing your ternary (third) ability key.",
+    "badges":
+        [
+            {
+                "type": "origins:keybind",
+                "sprite": "minecraft:textures/item/minecart.png",
+                "text": "You can ride another player by pressing %s while looking at them"
+            }
+        ],
+    "type": "extraorigins:start_riding",
+    "key": { "key": "key.origins.ternary_active" }
+}
