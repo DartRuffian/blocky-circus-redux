@@ -5,8 +5,9 @@
     "resource":
         {
             "type": "origins:resource",
-            "min": 0,
-            "max": 3 ,
+            "min": 1,
+            "max": 5,
+            "start_value": 1,
             "max_action":
                 {
                     "type": "origins:change_resource",
@@ -26,7 +27,7 @@
             "type": "origins:active_self",
             "key":
                 {
-                    "key": "key.origins.secondary_active"
+                    "key": "key.origins.ternary_active"
                 },
             "entity_action":
                 {
@@ -55,6 +56,24 @@
                                             "resource": "*:*_resource",
                                             "comparison": "==",
                                             "compare_to": 0
+                                        },
+                                    "action":
+                                        {
+                                            "type": "origins:clear_effect",
+                                            "effects":
+                                                [
+                                                    "minecraft:strength",
+                                                    "minecraft:nausea"
+                                                ]
+                                        }
+                                },
+                                {
+                                    "condition":
+                                        {
+                                            "type": "origins:resource",
+                                            "resource": "*:*_resource",
+                                            "comparison": "==",
+                                            "compare_to": 1
                                         },
                                     "action":
                                         {
@@ -94,7 +113,7 @@
                                             "type": "origins:resource",
                                             "resource": "*:*_resource",
                                             "comparison": "==",
-                                            "compare_to": 1
+                                            "compare_to": 2
                                         },
                                     "action":
                                         {
@@ -120,7 +139,7 @@
                                             "type": "origins:resource",
                                             "resource": "*:*_resource",
                                             "comparison": "==",
-                                            "compare_to": 2
+                                            "compare_to": 3
                                         },
                                     "action":
                                         {
