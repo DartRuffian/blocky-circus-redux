@@ -1,6 +1,6 @@
 {
     "name": "Air Pump",
-    "description": "You can change your size at will!\nRead the badges for the power for how to change size.",
+    "description": "You can change your size at will by pressing your secondary key!",
     "badges":
         [
             {
