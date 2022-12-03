@@ -1,12 +1,13 @@
 {
-    "name": "Itty Bitty",
-    "hidden": true,
+    "name": "Fragile Body",
+    "description": "You have 4 less hearts than a normal human",
     "type": "origins:attribute",
-    "modifier": {
-        "attribute": "minecraft:generic.max_health",
-        "operation": "addition",
-        "value": -8,
-        "name": "Itty Bitty"
-    },
+    "modifier":
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -8,
+            "name": "Itty Bitty"
+        },
     "update_health": false
 }
