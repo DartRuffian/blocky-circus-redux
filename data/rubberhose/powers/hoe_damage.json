@@ -1,0 +1,84 @@
+{
+    "name":"wobbly arms",
+    "description": "due to being a cartoon your damage is greatly reduced unless wielding hoes, hoes deal more damage",
+    
+    "type":"origins:multiple",
+    "decreased_damage":
+        {
+            "type": "origins:modify_damage_dealt",
+            "modifier":
+                {
+                    "operation": "multiply_total",
+                    "value": -0.7
+                },
+            "condition":
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition":
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "rubberhose:all_hoes" }
+                        },
+                    "inverted": true
+                }
+        
+        },
+    "hoes_tier_1":
+        {
+            "type": "origins:modify_damage_dealt",
+            "modifier":
+                {
+                    "operation": "addition",
+                    "value": 3
+                },
+            "condition":
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": 
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "rubberhose:hoes_t1" }
+                        }
+                }
+        },
+    "hoes_tier_2":
+        {
+            "type": "origins:modify_damage_dealt",
+            "modifier":
+                {
+                    "operation": "addition",
+                    "value": 4
+                },
+            "condition":
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": 
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "rubberhose:hoes_t2" }
+                        }
+                }
+        },
+    "hoes_tier_3":
+        {
+            "type": "origins:modify_damage_dealt",
+            "modifier":
+                {
+                    "operation": "addition",
+                    "value": 6.5
+                },
+            "condition":
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": 
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "rubberhose:hoes_t3" }
+                        }
+                }
+        }
+}

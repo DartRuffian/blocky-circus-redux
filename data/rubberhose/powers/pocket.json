@@ -1,0 +1,20 @@
+{
+    "name": "Sketchy Pockets",
+    "description": "A secret pocket that only you can access.\n(Drops on Death)",
+    "badges":
+        [
+            {
+                "sprite": "minecraft:textures/item/bundle.png",
+                "text": "Your secret pockets has 9 inventory slots"
+            }
+        ],
+
+    "type": "origins:inventory",
+    "title": "Sketchy Pocket",
+    "drop_on_death": true,
+    "key":
+        {
+            "key": "key.origins.ternary_active"
+        }
+    
+}

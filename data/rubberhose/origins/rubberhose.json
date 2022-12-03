@@ -1,0 +1,29 @@
+{
+	"name": "Rubberhose",
+	"description": "The embodiment of cartoon physics!",
+	"icon": "minecraft:anvil",
+	"impact": 2,
+	"powers":
+        [
+			"rubberhose:pocket",
+			"rubberhose:pie_flight",
+			"rubberhose:springy",
+			"rubberhose:gravity",
+			
+			"origins:extra_reach",
+			
+			"rubberhose:punch_sfx",
+			
+			"rubberhose:water_slowness",
+			"rubberhose:fire_damage",
+			"rubberhose:hoe_damage"
+        ],
+	"upgrades":
+		[
+			{
+				"condition": "minecraft:nether/return_to_sender",
+				"origin": "rubberhose:adapted_rubberhose",
+				"announcement": "Booiinnggggg! Seems like you've changed, check your Origin!"
+			}
+		]
+}

@@ -1,0 +1,15 @@
+{
+	"name": "Adapted Rubberhose",
+    "description": "The embodiment of cartoon physics!",
+	"icon":
+        {
+            "item": "minecraft:anvil",
+            "amount": 1,
+            "tag": "{Enchantments: [{id: mending, lvl: 1}]}"
+        },
+	"impact": 1,
+	"unchoosable": true,
+    "powers":
+        [
+        ]
+}

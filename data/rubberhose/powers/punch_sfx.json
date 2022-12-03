@@ -1,0 +1,13 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action":
+        {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.slime_block.hit"
+        },
+    "target_condition":
+        {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:fireball"
+        }
+}

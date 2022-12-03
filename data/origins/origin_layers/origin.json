@@ -11,6 +11,8 @@
             "candle:candle",
             "candle:adapted_candle",
             "moobloom:moobloom",
-            "moobloom:adapted_moobloom"
+            "moobloom:adapted_moobloom",
+            "rubberhose:rubberhose",
+            "rubberhose:adapted_rubberhose"
         ]
 }
