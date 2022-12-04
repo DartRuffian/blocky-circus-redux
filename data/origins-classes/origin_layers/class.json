@@ -1,9 +1,10 @@
 {
     "replace": true,
     "order": 10,
-    "allow_random": true,
+    "allow_random": false,
     "origins": 
         [
+            "utils:nitwit",
             "origins-classes:blacksmith",
             "origins-classes:cleric",
             "origins-classes:cook",

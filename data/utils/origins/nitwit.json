@@ -1,0 +1,7 @@
+{
+    "name": "Nitwit",
+    "description": "Nitwits aren't really good at anything.",
+    "icon": "minecraft:green_wool",
+    "impact": 0,
+    "unchoosable": true
+}
