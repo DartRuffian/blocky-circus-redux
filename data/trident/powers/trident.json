@@ -1,7 +1,15 @@
 {
-	"type": "origins:multiple",
 	"name": "Trident Proficiency",
 	"description": "The use of that ancient weapon is printed into your hands.",
+	"badges":
+        [
+            {
+                "type": "origins:tooltip",
+                "sprite": "minecraft:textures/item/trident.png",
+                "text": "Tridents you throw and hit entities with deal +3 damage"
+            }
+        ],
+	"type": "origins:multiple",
 	"melee_damage": 
 		{
 			"type": "origins:modify_damage_dealt",
