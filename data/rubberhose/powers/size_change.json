@@ -64,7 +64,7 @@
                                     "action":
                                         {
                                             "type": "origins:execute_command",
-                                            "command": "scale set pehkui:base 0.125 @s"
+                                            "command": "scale set extraorigins:modify_size 0.125 @s"
                                         }
                                 },
                                 {
@@ -78,7 +78,7 @@
                                     "action":
                                         {
                                             "type": "origins:execute_command",
-                                            "command": "scale set pehkui:base 1 @s"
+                                            "command": "scale set extraorigins:modify_size 1 @s"
                                         }
                                 },
                                 {
@@ -92,7 +92,7 @@
                                     "action":
                                         {
                                             "type": "origins:execute_command",
-                                            "command": "scale set pehkui:base 2 @s"
+                                            "command": "scale set extraorigins:modify_size 2 @s"
                                         }
                                 }
                             ]
