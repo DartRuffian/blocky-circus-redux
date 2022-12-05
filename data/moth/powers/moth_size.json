@@ -18,6 +18,11 @@
 	"no_vibrations":
 		{
 			"type": "origins:prevent_game_event",
-			"event": "minecraft:step"
+			"events": 
+			[
+				"minecraft:step",
+				"minecraft:elytra_glide",
+				"minecraft:hit_ground"
+			]
 		}
   }
