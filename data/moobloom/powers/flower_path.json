@@ -16,24 +16,16 @@
                                     {
                                         "element":
                                             {
-                                                "type": "origins:block_action_at",
-                                                "block_action":
-                                                    {
-                                                        "type": "origins:set_block",
-                                                        "block": "minecraft:dandelion"
-                                                    }
+                                                "type": "origins:execute_command",
+                                                "command": "fill ~ ~ ~ ~ ~ ~ minecraft:dandelion replace air"
                                             },
                                         "weight": 40
                                     },
                                     {
                                         "element":
                                             {
-                                                "type": "origins:block_action_at",
-                                                "block_action":
-                                                    {
-                                                        "type": "origins:set_block",
-                                                        "block": "friendsandfoes:buttercup"
-                                                    }
+                                                "type": "origins:execute_command",
+                                                "command": "fill ~ ~ ~ ~ ~ ~ friendsandfoes:buttercup replace air"
                                             },
                                         "weight": 40
                                     },
@@ -47,12 +39,12 @@
                                                         "actions":
                                                             [
                                                                 {
-                                                                    "type": "origins:set_block",
-                                                                    "block": "minecraft:sunflower"
+                                                                    "type": "origins:execute_command",
+                                                                    "command": "fill ~ ~ ~ ~ ~ ~ minecraft:sunflower replace air"
                                                                 },
                                                                 {
-                                                                    "type": "origins:add_block",
-                                                                    "block": "minecraft:sunflower[half=upper]"
+                                                                    "type": "origins:execute_command",
+                                                                    "command": "fill ~ ~ ~ ~ ~ ~ minecraft:sunflower[half=upper] replace air"
                                                                 }
                                                             ]
                                                     }
@@ -70,16 +62,12 @@
                     "conditions":
                         [
                             {
-                                "type": "origins:block_in_radius",
+                                "type": "origins:on_block",
                                 "block_condition":
                                     {
                                         "type": "origins:block",
                                         "block": "minecraft:grass_block"
-                                    },
-                                "radius": 2,
-                                "shape": "sphere",
-                                "comparison": ">=",
-                                "compare_to": 4
+                                    }
                             },
                             {
                                 "type": "origins:power_active",
